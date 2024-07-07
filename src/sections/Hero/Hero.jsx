@@ -20,36 +20,39 @@ function Hero() {
   const LinkedinIcon = theme === "light" ? LinkedinLight : LinkedinDark;
 
   return (
-    <section id="hero" className={styles.container}>
-      <div className="{styles.colorModeContainer}">
-        <img className={styles.hero} src={heroImg} alt="Just eye" />
-        <img src={themeIcon} alt="Color mode icon" onClick={toggleTheme} />
+    <section id='hero' className={styles.container}>
+      <div className={styles.colorModeContainer}>
+        <img className={styles.hero} src={heroImg} alt='Just eye' />
+        <img
+          className={styles.colorMode}
+          src={themeIcon}
+          alt='Color mode icon'
+          onClick={toggleTheme}
+        />
       </div>
-      <div>
-        <div className={styles.info}>
-          <h1>
-            Mahammad <br /> Sharoof
-          </h1>
-          <h2> Computer Science</h2>
-          <span>
-            <a href="https://twitter.com" target="_blank">
-              <img src={TwitterIcon} alt="Twitter icon" />
-            </a>
-            <a href="https://github.com" target="_blank">
-              <img src={GithubIcon} alt="Github icon" />
-            </a>
-            <a href="https://linkedin.com" target="_blank">
-              <img src={LinkedinIcon} alt="Linkedin icon" />
-            </a>
-          </span>
-          <p className={styles.description}>
-            Passionate about exploring and mastering new concepts in the world
-            of computing.
-          </p>
-          <a href={CV} download>
-            <button className="hover">Resume</button>
+      <div className={styles.info}>
+        <h1>
+          Mahammad <br /> Sharoof
+        </h1>
+        <h2> Computer Science</h2>
+        <span>
+          <a href='https://twitter.com' target='_blank'>
+            <img src={TwitterIcon} alt='Twitter icon' />
           </a>
-        </div>
+          <a href='https://github.com' target='_blank'>
+            <img src={GithubIcon} alt='Github icon' />
+          </a>
+          <a href='https://linkedin.com' target='_blank'>
+            <img src={LinkedinIcon} alt='Linkedin icon' />
+          </a>
+        </span>
+        <p className={styles.description}>
+          Passionate about exploring and mastering new concepts in the world of
+          computing.
+        </p>
+        <a href={CV} download>
+          <button className={styles.button}>Resume</button>
+        </a>
       </div>
     </section>
   );
