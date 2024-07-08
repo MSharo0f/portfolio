@@ -19,6 +19,8 @@ function Hero() {
   const GithubIcon = theme === "light" ? GithubLight : GithubDark;
   const LinkedinIcon = theme === "light" ? LinkedinLight : LinkedinDark;
 
+
+
   return (
     <section id='hero' className={styles.container}>
       <div className={styles.colorModeContainer}>
