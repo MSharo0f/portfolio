@@ -8,26 +8,16 @@ import Footer from "./sections/Footer/Footer";
 import LoadingAnimation from "./sections/Animations/LoadingWrapper";
 
 function App() {
-  const [isLoading, setIsLoading] = useState(true);
-
-  useEffect(() => {
-
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 4000);
-  }, []);
-
   return (
     <>
-      {isLoading ? <LoadingAnimation /> : (
-        <>
-          <Hero />
-          <Projects />
-          <Skills />
-          <Contact />
-          <Footer />
-        </>
-      )}
+      <LoadingAnimation />
+      <>
+        <Hero />
+        <Projects />
+        <Skills />
+        <Contact />
+        <Footer />
+      </>
     </>
   );
 }

@@ -19,16 +19,14 @@ function Hero() {
   const GithubIcon = theme === "light" ? GithubLight : GithubDark;
   const LinkedinIcon = theme === "light" ? LinkedinLight : LinkedinDark;
 
-
-
   return (
-    <section id='hero' className={styles.container}>
+    <section id="hero" className={styles.container}>
       <div className={styles.colorModeContainer}>
-        <img className={styles.hero} src={heroImg} alt='Just eye' />
+        <img className={styles.hero} src={heroImg} alt="Just eye" />
         <img
           className={styles.colorMode}
           src={themeIcon}
-          alt='Color mode icon'
+          alt="Color mode icon"
           onClick={toggleTheme}
         />
       </div>
@@ -38,14 +36,17 @@ function Hero() {
         </h1>
         <h2> Computer Science</h2>
         <span>
-          <a href='https://twitter.com' target='_blank'>
-            <img src={TwitterIcon} alt='Twitter icon' />
+          <a href="https://twitter.com" target="_blank">
+            <img src={TwitterIcon} alt="Twitter icon" />
           </a>
-          <a href='https://github.com/MSharo0f' target='_blank'>
-            <img src={GithubIcon} alt='Github icon' />
+          <a href="https://github.com/MSharo0f" target="_blank">
+            <img src={GithubIcon} alt="Github icon" />
           </a>
-          <a href='https://www.linkedin.com/in/mahammad-sharoof/' target='_blank'>
-            <img src={LinkedinIcon} alt='Linkedin icon' />
+          <a
+            href="https://www.linkedin.com/in/mahammad-sharoof/"
+            target="_blank"
+          >
+            <img src={LinkedinIcon} alt="Linkedin icon" />
           </a>
         </span>
         <p className={styles.description}>

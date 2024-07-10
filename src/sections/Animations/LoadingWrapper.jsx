@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import LoadingAnimation from './Loading';
+import React, { useState, useEffect } from "react";
+import LoadingAnimation from "./Loading";
 
 const LoadingWrapper = ({ children }) => {
   const [loading, setLoading] = useState(true);
@@ -7,7 +7,7 @@ const LoadingWrapper = ({ children }) => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 4000); // 3 seconds loading time
+    }, 4000); // Change loading time here(4)
 
     return () => clearTimeout(timer);
   }, []);

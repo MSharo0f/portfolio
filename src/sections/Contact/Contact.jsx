@@ -16,36 +16,35 @@ function Contact() {
       return;
     }
 
-   
     const formData = new FormData(event.target);
 
-   
-    formData.append('g-recaptcha-response', recaptchaValue);
+    formData.append("g-recaptcha-response", recaptchaValue);
 
-  
     fetch(event.target.action, {
       method: event.target.method,
       body: formData,
       headers: {
-        'Accept': 'application/json'
-      }
-    }).then(response => {
-      if (response.ok) {
-        alert("Thanks for your submission!");
-        event.target.reset();
-      } else {
-        alert("Failed to submit. Please try again.");
-      }
-    }).catch(error => {
-      alert("There was a problem submitting the form. Please try again.");
-    });
+        Accept: "application/json",
+      },
+    })
+      .then((response) => {
+        if (response.ok) {
+          alert("Thanks for your submission!");
+          event.target.reset();
+        } else {
+          alert("Failed to submit. Please try again.");
+        }
+      })
+      .catch((error) => {
+        alert("There was a problem submitting the form. Please try again.");
+      });
   };
 
   return (
     <section id="contact" className={styles.container}>
       <h1 className="sectionTitle">Contact</h1>
-      <form 
-        action={import.meta.env.VITE_EMAIL}
+      <form
+        action={import.meta.env.VITE_EMAIL} //Please Enter your Formspree email address here
         method="post"
         onSubmit={handleSubmit}
       >
@@ -84,9 +83,16 @@ function Contact() {
             required
           ></textarea>
         </div>
-        <div className="formGroup" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-          <ReCAPTCHA 
-            sitekey={import.meta.env.VITE_RECAPTCHA_SITE_KEY}
+        <div
+          className="formGroup"
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <ReCAPTCHA
+            sitekey={import.meta.env.VITE_RECAPTCHA_SITE_KEY} //Please enter your recaptcha code here
             onChange={handleRecaptchaChange}
           />
         </div>

@@ -1,4 +1,4 @@
-import styles from './Projects.module.css';
+import styles from "./Projects.module.css";
 import React from "react";
 import BusTicket from "../../assets/Bus_ticket (1).jpg";
 import PollVoting from "../../assets/PollVotingSystem.jpg";
