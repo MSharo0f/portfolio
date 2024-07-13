@@ -1,8 +1,8 @@
 import styles from "./Projects.module.css";
 import React from "react";
-import BusTicket from "../../assets/Bus_ticket (1).jpg";
+import BusTicket from "../../assets/Bus_ticket.jpg";
 import PollVoting from "../../assets/PollVotingSystem.jpg";
-import GroupExpenseTracker from "../../assets/GroupExpenseTracker (1).jpg";
+import GroupExpenseTracker from "../../assets/GroupExpenseTracker.jpg";
 import ProjectCard from "../../common/ProjectCard";
 
 function Projects() {
@@ -10,7 +10,7 @@ function Projects() {
     <section id="projects" className={styles.container}>
       <h1 className="sectionTitle">Projects</h1>
       <div className={styles.projectsContainer}>
-        {/* <a href="https://new.blank.page/" target="_blank">
+        {/* <a href="https://new.blank.page/" target="_blank"> //this is just for single use
           <img src={BusTicket} alt="BusTicket logo" className="hover" />
           <h3>Bus Ticket Booking</h3>
           <p>Ticket Booking Website</p>

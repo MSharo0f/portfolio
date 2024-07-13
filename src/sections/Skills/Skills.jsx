@@ -1,7 +1,5 @@
-// import React from 'react'
 import styles from "./SkillStyle.module.css";
 import SkillList from "../../common/SkillList";
-// import checkMarkIcon from "../../assets/checkmark-dark.svg";
 import { useTheme } from "../../common/ThemeContext";
 import checkMarkIconDark from "../../assets/checkmark-dark.svg";
 import checkMarkIconLight from "../../assets/checkmark-light.svg";

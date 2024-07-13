@@ -7,7 +7,7 @@ const LoadingWrapper = ({ children }) => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 4000); // Change loading time here(4)
+    }, 6000); // Change loading time here(6)
 
     return () => clearTimeout(timer);
   }, []);

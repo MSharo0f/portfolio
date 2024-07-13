@@ -30,12 +30,12 @@ function Hero() {
           <TypeAnimation
             className={styles.typeAnimation}
             sequence={[
-              'Software Developer ',
+              "Software Developer ",
               900,
-              'Web Developer ',
+              "Web Developer ",
               900,
-              'Software Tester',
-              900
+              "Software Tester",
+              900,
             ]}
             wrapper="h2"
             speed={35}
@@ -43,10 +43,18 @@ function Hero() {
           />
         </div>
         <span>
-          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://twitter.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img src={TwitterIcon} alt="Twitter icon" />
           </a>
-          <a href="https://github.com/MSharo0f" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://github.com/MSharo0f"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img src={GithubIcon} alt="Github icon" />
           </a>
           <a
@@ -58,7 +66,8 @@ function Hero() {
           </a>
         </span>
         <p className={styles.description}>
-          Passionate about exploring and mastering new concepts in the world of computing.
+          Passionate about exploring and mastering new concepts in the world of
+          computing.
         </p>
         <a href={CV} download>
           <button className={styles.button}>Resume</button>

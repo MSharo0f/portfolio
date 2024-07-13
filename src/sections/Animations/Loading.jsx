@@ -1,4 +1,3 @@
-// LoadingAnimation.js
 import React from "react";
 import "./LoadingAnimation.scss";
 

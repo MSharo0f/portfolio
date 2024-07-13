@@ -13,7 +13,7 @@ body {
   background-color: rgba(0, 0, 0, 0.9);
   margin: 0;
   font: bold 14px/1.4 "Open Sans", arial, sans-serif;
-  gap: 1.5rem; 
+  gap: 1.5rem;
 }
 
 .header .navbar {
@@ -29,7 +29,7 @@ body {
 .header .navbar img {
   width: 250px;
   height: auto;
-  margin-top: 15px; 
+  margin-top: 15px;
 }
 
 .header .nav-menu {
@@ -127,7 +127,7 @@ a:hover:after {
     text-align: center;
     transition: 0.3s;
     box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
-    gap: 1rem; 
+    gap: 1rem;
   }
 
   .nav-menu.active {
@@ -141,7 +141,7 @@ a:hover:after {
 
   .header .navbar img {
     width: 150px;
-    gap: 1rem; 
+    gap: 1rem;
   }
 
   .header .nav-item {
@@ -152,7 +152,8 @@ a:hover:after {
     height: 3px;
   }
 
-  a:hover:after, a:active:after {
+  a:hover:after,
+  a:active:after {
     width: 100%;
     left: 0;
   }
@@ -169,4 +170,3 @@ a:hover:after {
     margin-top: 5px;
   }
 }
-  
