@@ -1,3 +1,4 @@
+
 .container {
   display: flex;
   flex-direction: column;
@@ -57,16 +58,6 @@ a {
   position: relative;
 }
 
-.colorMode {
-  position: absolute;
-  right: 0;
-  width: 25px;
-}
-
-.colorMode:hover {
-  cursor: pointer;
-}
-
 .description {
   max-width: 24ch;
 }
@@ -74,25 +65,48 @@ a {
 .info {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 5px;
 }
 
-@media (width >= 800px) {
+.typeAnimation {
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: "Roboto Mono", monospace;
+}
+
+@media (min-width: 1000px) {
   .container {
     flex-direction: row-reverse;
     align-items: center;
     justify-content: space-evenly;
   }
-
   .hero {
     max-width: 350px;
     width: 350px;
   }
+  .description {
+    padding-left: 10px; /* Adjust as needed for proper alignment */
+  }
 }
 
-@media (width >= 1400px) {
-  .container .hero {
-    max-width: 400px;
-    width: 400px;
+@media (min-width: 800px) and (max-width: 999px) {
+  .container {
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .hero {
+    max-width: 350px;
+    width: 350px;
+  }
+  .description {
+    padding-left: 10px; 
+  }
+}
+
+@media (max-width: 800px) and (min-width: 300px) {
+  .description {
+    padding-left: 60px;
+    text-align: center;
   }
 }

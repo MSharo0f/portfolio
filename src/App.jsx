@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./App.css";
+import Header from "./sections/Header/Header";
 import Hero from "./sections/Hero/Hero";
 import Projects from "./sections/Projects/Projects";
 import Skills from "./sections/Skills/Skills";
@@ -12,10 +13,19 @@ function App() {
     <>
       <LoadingAnimation />
       <>
-        <Hero />
-        <Projects />
-        <Skills />
-        <Contact />
+        <Header />
+        <section id="hero">
+          <Hero />
+        </section>
+        <section id="projects">
+          <Projects />
+        </section>
+        <section id="skills">
+          <Skills />
+        </section>
+        <section id="contact">
+          <Contact />
+        </section>
         <Footer />
       </>
     </>

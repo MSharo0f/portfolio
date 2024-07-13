@@ -92,7 +92,7 @@ function Contact() {
           }}
         >
           <ReCAPTCHA
-            sitekey={import.meta.env.VITE_RECAPTCHA_SITE_KEY} //Please enter your recaptcha code here
+            sitekey={import.meta.env.VITE_RECAPTCHA_SITE_KEY}
             onChange={handleRecaptchaChange}
           />
         </div>
