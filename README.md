@@ -8,5 +8,5 @@ You can use it as well.
 Please create your own captcha code and Formspree email addresses
     You can change that in contact page.
 
-And thank to <a href="https://github.com/Ade-mir">Ademir</a>
+And thanks to <a href="https://github.com/Ade-mir">Ademir</a>
 
